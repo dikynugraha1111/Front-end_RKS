@@ -1,18 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/acopat_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/acopatlogo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/bgProfil"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/bgprofil"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/acopat_logo"
+        android:orientation="vertical"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/judulProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Data Peserta Didik"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoProfil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fotosiswa"
+                />
+
+            <TextView
+                android:id="@+id/namaSiswa"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/fotoProfil"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama    : Diky Nugraha Difiera"
+                />
+            <TextView
+                android:id="@+id/nisnSiswa"
+                android:layout_toRightOf="@+id/fotoProfil"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/namaSiswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NISN      : 1800018380"
+                />
+            <TextView
+                android:id="@+id/kelasSiswa"
+                android:layout_toRightOf="@+id/fotoProfil"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/nisnSiswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelas     : H"
+                />
+            <TextView
+                android:id="@+id/sekolahSiswa"
+                android:layout_toRightOf="@+id/fotoProfil"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/kelasSiswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekolah: UAD"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bgMenu"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgprofil"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bgProfil"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_absen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/presensi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/absensi"
+                    />
+                <TextView
+                    android:layout_below="@+id/presensi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absensi Siswa"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_nilai"
+                android:layout_toRightOf="@+id/btn_absen"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/nilai"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/nilai"
+                    />
+                <TextView
+                    android:layout_below="@+id/nilai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Nilai Siswa"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_e_learning"
+                android:layout_toRightOf="@+id/btn_nilai"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/e_learning"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/elearning"
+                    />
+                <TextView
+                    android:layout_below="@+id/e_learning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="E-Learning"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_beritaAcara"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/beritaAcara"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/berita"
+                    />
+                <TextView
+                    android:layout_below="@+id/beritaAcara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Berita Acara"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_perkembangan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_beritaAcara"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/perkembangan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/perkembangan"
+                    />
+                <TextView
+                    android:layout_below="@+id/perkembangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Perkembangan"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_PP"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_perkembangan"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/PP"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/pp"
+                    />
+                <TextView
+                    android:layout_below="@+id/PP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="PP"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -7,6 +7,66 @@
     tools:context=".Login"
     android:background="@color/acopatPrimary">
 
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:src="@drawable/closebutton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="23dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/konten"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/bgkonten"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="AKSES DITOLAK"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Username atau Password Salah"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/overbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="3dp"
+        android:background="@drawable/overbox"
+        />
+
     <ImageView
         android:id="@+id/acopat_logo"
         android:layout_marginTop="100dp"
