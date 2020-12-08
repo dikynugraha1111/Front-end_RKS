@@ -46,8 +46,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/fotoProfil"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
                 android:src="@drawable/fotosiswa"
                 />
 
@@ -99,7 +99,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/bgProfil"
         android:orientation="vertical"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="40dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
