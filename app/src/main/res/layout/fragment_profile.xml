@@ -3,12 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    android:background="@color/colorPrimary"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_profil"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:src="@drawable/fotosiswa"
+        />
 
+    <LinearLayout
+        android:id="@+id/ll_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto_profil"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Gambar Profile"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keluar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
 </RelativeLayout>

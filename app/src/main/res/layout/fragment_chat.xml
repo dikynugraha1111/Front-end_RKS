@@ -46,7 +46,7 @@
         android:id="@+id/cardView3"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/chat_profile"
-        android:layout_width="280dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="5dp"
@@ -60,7 +60,7 @@
 
             <EditText
                 android:id="@+id/et_chat"
-                android:layout_width="270dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:hint="Type here..."
                 android:textColor="#FFEBEE"
@@ -73,7 +73,8 @@
     <ImageView
         android:id="@+id/mic"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/send"
+        android:layout_toRightOf="@+id/cardView3"
+        android:layout_marginLeft="5dp"
         android:layout_marginBottom="12dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -83,7 +84,8 @@
     <ImageView
         android:id="@+id/send"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/mic"
+        android:layout_marginLeft="5dp"
         android:layout_marginBottom="12dp"
         android:layout_width="30dp"
         android:layout_height="30dp"

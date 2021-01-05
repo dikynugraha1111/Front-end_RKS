@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeritaAcara"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/acopat_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/acopatlogo"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/bgProfil"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgprofil"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/acopat_logo"
+            android:orientation="vertical"
+            >
+
+                <TextView
+                    android:id="@+id/judulProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="serif"
+                    android:text="Data Peserta Didik"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/fotoProfil"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:src="@drawable/fotosiswa"
+                            />
+
+                        <TextView
+                            android:id="@+id/namaSiswa"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/fotoProfil"
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama    : Diky Nugraha Difiera"
+                            />
+                        <TextView
+                            android:id="@+id/nisnSiswa"
+                            android:layout_toRightOf="@+id/fotoProfil"
+                            android:layout_marginLeft="3dp"
+                            android:layout_below="@+id/namaSiswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NISN      : 1800018380"
+                            />
+                        <TextView
+                            android:id="@+id/kelasSiswa"
+                            android:layout_toRightOf="@+id/fotoProfil"
+                            android:layout_marginLeft="3dp"
+                            android:layout_below="@+id/nisnSiswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kelas     : H"
+                            />
+                        <TextView
+                            android:id="@+id/sekolahSiswa"
+                            android:layout_toRightOf="@+id/fotoProfil"
+                            android:layout_marginLeft="3dp"
+                            android:layout_below="@+id/kelasSiswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sekolah: UAD"
+                            />
+
+                </RelativeLayout>
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/berita_acara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgProfil"
+        android:src="@drawable/beritaacaranewmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

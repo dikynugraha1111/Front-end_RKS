@@ -34,6 +34,12 @@ class HomeFragment : Fragment(){
            val mIntent = Intent(activity,Pp::class.java)
            startActivity(mIntent)
         }
+
+        btn_beritaAcara.setOnClickListener {
+            val mIntentBerita = Intent(activity,BeritaAcara::class.java)
+            startActivity(mIntentBerita)
+        }
+        
     }
 
 //    override fun onClick(p0: View) {

@@ -31,6 +31,7 @@ class Login : AppCompatActivity(), View.OnClickListener {
 
         btn_login.setOnClickListener(this)
         btn_close.setOnClickListener(this)
+        btn_daftar.setOnClickListener(this)
 
         konten.alpha = 0f
         btn_close.alpha = 0f
@@ -74,6 +75,10 @@ class Login : AppCompatActivity(), View.OnClickListener {
 
                 ViewCompat.animate(konten).setStartDelay(1000).alpha(0f).start()
                 ViewCompat.animate(btn_close).setStartDelay(1000).alpha(0f).start()
+            }
+            R.id.btn_daftar->{
+                val IntentDaftar = Intent(this@Login,Daftar::class.java)
+                startActivity(IntentDaftar)
             }
         }
     }
